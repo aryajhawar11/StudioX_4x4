@@ -1,0 +1,27 @@
+# Frontend ignores
+studiox-4x4-frontend/node_modules/
+studiox-4x4-frontend/dist/
+studiox-4x4-frontend/.env
+studiox-4x4-frontend/.env.*
+!studiox-4x4-frontend/.env.example
+
+# Backend ignores
+studiox-backend/node_modules/
+studiox-backend/build/
+studiox-backend/dist/
+studiox-backend/.cache/
+studiox-backend/.tmp/
+studiox-backend/.env
+studiox-backend/.env.*
+!studiox-backend/.env.example
+studiox-backend/*.db
+studiox-backend/*.db-journal
+
+# General ignores
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+npm-debug.log*
+yarn-error.log*
+yarn-debug.log*

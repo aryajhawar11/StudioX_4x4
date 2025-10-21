@@ -1,0 +1,51 @@
+.product-detail-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  
+  .product-gallery .main-image {
+    width: 100%;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+  }
+  
+  .product-info h1 {
+    font-size: 2.5rem;
+    margin-top: 0;
+  }
+  
+  .product-info .description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  .specs-section {
+    margin-bottom: 20px;
+  }
+  
+  .specs-section h3 {
+    font-size: 1.2rem;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 5px;
+    color: var(--primary-black);
+  }
+  
+  /* Styles for Rich Text output */
+  .specs-section ul {
+    padding-left: 20px;
+    line-height: 1.6;
+  }
+  
+  .specs-section .cost {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-red);
+  }
+  
+  .quote-section {
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 1px solid var(--border-color);
+  }
