@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { submitQuery } from '../api/strapi'; // Make sure this function exists and works
+import { submitQuery } from '../api/strapi';
 
 const ContactForm = ({ productName }) => {
   const [formData, setFormData] = useState({
@@ -49,7 +49,7 @@ const ContactForm = ({ productName }) => {
           value={formData.full_name} 
           onChange={handleChange} 
           required 
-          className="w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent" 
+          className="w-full px-4 py-3 bg-white text-black border border-gray-300 rounded-md shadow-sm placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent" 
         />
         <input 
           type="email" 
@@ -58,7 +58,7 @@ const ContactForm = ({ productName }) => {
           value={formData.email} 
           onChange={handleChange} 
           required 
-          className="w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent"
+          className="w-full px-4 py-3 bg-white text-black border border-gray-300 rounded-md shadow-sm placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent"
         />
       </div>
       
@@ -70,7 +70,7 @@ const ContactForm = ({ productName }) => {
           value={formData.contact_number} 
           onChange={handleChange} 
           required 
-          className="w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent"
+          className="w-full px-4 py-3 bg-white text-black border border-gray-300 rounded-md shadow-sm placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent"
         />
       </div>
       
@@ -80,13 +80,11 @@ const ContactForm = ({ productName }) => {
         rows="5"
         value={formData.message} 
         onChange={handleChange}
-        // --- 1. Added placeholder color HERE ---
-        className="w-full px-4 py-3 border text-black border-gray-300 rounded-md shadow-sm placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent"
+        className="w-full px-4 py-3 bg-white text-black border border-gray-300 rounded-md shadow-sm placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent"
       ></textarea>
       
       <button 
         type="submit" 
-        // --- 2. Changed button background colors HERE ---
         className="w-full bg-black text-white py-3 px-6 rounded-md font-bold uppercase transition-colors duration-300 hover:bg-gray-800 disabled:bg-gray-400"
         disabled={status.type === 'sending'}
       >

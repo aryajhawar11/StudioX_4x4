@@ -97,7 +97,7 @@ export const fetchProductDetails = async (productId) => {
   // This assumes 'productId' is the 'documentId'
   const response = await strapiApi.get(`/api/products/${productId}?populate=images`);
   console.log("fetchProductDetails response:", response.data);
-  return response.data.data; // This is correct for flat data
+  return response.data; // This is correct for flat data
 };
 
 export const submitQuery = async (formData) => {

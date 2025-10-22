@@ -48,7 +48,7 @@ const ProductDetailPage = () => {
     indicative_cost,
     installation_time,
     images
-  } = product;
+  } = product.data;
 
   const productImages = getStrapiMediaList(images);
 
@@ -93,7 +93,11 @@ const ProductDetailPage = () => {
         {/* The info area now spans 2 of the 5 columns (40%) */}
         <div className="product-info lg:col-span-2 mt-8 lg:mt-0">
           <h1 className="text-4xl font-bold text-brand-black mb-4">{name}</h1>
-          <p className="text-lg text-gray-700 leading-relaxed mb-6">{description}</p>
+          {description && (
+                            <div className="prose max-w-none text-lg text-white leading-relaxed mb-6">
+                                <BlocksRenderer content={description} />
+                            </div>
+                        )}
 
           <div className="space-y-6">
             <div className="specs-section">
