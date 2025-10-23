@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // Get the Strapi URL from the .env file
-const STRAPI_URL = import.meta.env.VITE_STRAPI_URL || "http://localhost:1337";
+const STRAPI_URL = import.meta.env.VITE_STRAPI_API_URL || "https://fabulous-love-f7e529a887.strapiapp.com";
 
 // Create a pre-configured axios instance for Strapi API
 export const strapiApi = axios.create({
@@ -96,7 +96,6 @@ export const fetchVehicleWithProducts = async (vehicleId) => {
 export const fetchProductDetails = async (productId) => {
   // This assumes 'productId' is the 'documentId'
   const response = await strapiApi.get(`/api/products/${productId}?populate=images`);
-  console.log("fetchProductDetails response:", response.data);
   return response.data; // This is correct for flat data
 };
 

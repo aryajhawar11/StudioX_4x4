@@ -23,7 +23,9 @@ const HomePage = () => {
       </section>
       
       <PartnersSection />
+      <section id="testimonials">
       <TestimonialsSection />
+      </section>
     </div>
   );
 };
