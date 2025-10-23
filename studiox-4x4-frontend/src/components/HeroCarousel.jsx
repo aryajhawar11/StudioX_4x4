@@ -26,7 +26,7 @@ const HeroCarousel = () => {
     return (
       <div className="hero-carousel-container relative">
         {firstSlide && (
-           <div key={firstSlide.id} className="slide-item relative h-[87vh] max-h-[900px] bg-black">
+           <div key={firstSlide.id} className="slide-item relative h-[90vh] max-h-[950px] bg-black">
              <img
                src={getStrapiMedia(firstSlide.image)}
                alt={firstSlide.title}
@@ -55,7 +55,7 @@ const HeroCarousel = () => {
         selectedItem={0}    // --- ADD THIS LINE ---
       >
         {slides.filter(Boolean).map(slide => ( // filter(Boolean) is good practice here too
-          <div key={slide.id} className="slide-item relative h-[87vh] max-h-[900px] bg-black">
+          <div key={slide.id} className="slide-item relative h-[90vh] max-h-[full] bg-black">
             <img
               src={getStrapiMedia(slide.image)}
               alt={slide.title}
