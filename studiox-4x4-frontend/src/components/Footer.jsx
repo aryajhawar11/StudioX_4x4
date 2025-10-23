@@ -30,8 +30,7 @@ const Footer = () => {
 
           {/* Column 1: Logo, About, Socials */}
           <div className="lg:col-span-2">
-            <img src={logoWhite} alt="StudioX 4x4" className="h-12 w-auto mb-2" />
-            <p className="text-sm italic mb-4">Elevating your driving experience</p>
+            <img src={logoWhite} alt="StudioX 4x4" className="h-18 w-auto mb-2" />
             <p className="text-sm leading-relaxed mb-6">
               At StudioX 4x4, we believe in building lasting relationships with our customers. StudioX Car Accessories in Delhi is a premium destination for top-quality car accessories, including custom seat covers, advanced audio systems, durable foot mats, and professional paint protection films.
             </p>
